@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .form {
+        background-color: #eee;
+        padding: 20px;
+        margin: 20px auto;
+        width: 600px;
+        border-radius: 0.5rem;
+        height: 30px;
+        display: flex;
+        gap: 20px;
+      }
+      .form .input {
+        width: 500px;
+        outline: none;
+        border: none;
+        height: 30px;
+        border-radius: 0.5rem;
+      }
+      .form .add {
+        cursor: pointer;
+        background-color: red;
+        color: white;
+        border: none;
+        width: 70px;
+        border-radius: 0.4rem;
+        height: 30px;
+      }
+      .tasks {
+        background-color: #eee;
+        padding: 20px;
+        margin: 20px auto;
+        width: 600px;
+        border-radius: 0.5rem;
+        /* display: flex;
+        justify-content: space-between; */
+      }
+      .to-do {
+        color: red;
+        margin: 20px auto;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 40px;
+      }
+      .tasks .task {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+      }
+
+      .tasks .task:not(:last-child) {
+        margin-bottom: 15px;
+      }
+      .tasks .task:hover {
+        background-color: #f7f7f7;
+      }
+
+      .tasks .task.done {
+        opacity: 0.5;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 0.5rem;
+      }
+      
+      .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: white;
+        padding: 10px 6px;
+        border-radius: 0.4rem;
+        cursor: pointer;
+        border: none;
+        float: right;
+        margin-top: -4px;
+        width: 30px;
+        height: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="to-do">To Do List</div>
+    <div class="form">
+      <input type="text" class="input" />
+      <input type="submit" class="add" value="Add Task" />
+    </div>
+    <div class="tasks"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
